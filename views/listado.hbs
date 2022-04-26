@@ -1,0 +1,40 @@
+<div class="container">
+    <h3>Listado de Usuarios</h3>
+    <div class="row">
+        <br>
+        <a href="/control/registrarUsuario" class="btn btn-primary">Nuevo</a>
+        <button id="chat" class="btn btn-warning" style="margin: 0px 7px;">Ir al chat</button>
+        <a href="/?val=2" class="btn btn-danger">Cerrar Sesíon</a>
+        <table class="table table-stripped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Correo</th>
+                    <th colspan="2">Operacion</th>
+                </tr>
+            </thead>
+            {{#each usuario}}
+            <tr>
+                <td>{{this.id}}</td>
+                <td>{{this.usuario}}</td>
+                <td>{{this.correo}}</td>
+                <td>
+                    <a href="/control/modificarUsuario/{{this.id}}">Modificar</a>
+                </td>
+                <td>
+                    <a href="/control/eliminarUsuario/{{this.id}}">Eliminar</a>
+                </td>
+            </tr>
+            {{/each}}
+        </table>
+    </div>
+    <div id="danger">
+            <p id="msjE1"></p>
+            <p id="msjE2"></p>
+        </div>
+    <script>function alerta() {
+            alert('Opción en Construcción');
+        }
+    </script>
+</div>

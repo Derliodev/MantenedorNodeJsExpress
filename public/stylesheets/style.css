@@ -1,0 +1,55 @@
+body {
+  width: auto;
+  height: 100%;
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.align {
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#danger {
+  margin-top: 35px;
+  font-size: 24px;
+  color: red;
+  display: block;
+  text-align: center;
+}
+#danger p{
+  margin: -5px;
+}
+
+.err {
+  display: none;
+}
+
+footer{
+  z-index: 1;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer p{
+  margin-top: -20px;
+  text-align: center;
+}
